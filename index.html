@@ -1,15 +1,52 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BreadSoft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>
-        Hello world...
-    </h1>
-    <div>
-        Say hi to us at <a href="mailto:info@breadsoft.org" target="_blank">info@breadsoft.org</a>
+    <style>
+        * {
+            font-family: 'Fira Code', monospace;
+            text-align: center;
+
+        }
+
+        .content{ 
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        h1 span{
+            margin-left: 80px;
+        }
+        h1 .logo {
+            position: absolute;
+            height: 75px;
+            transform: translateY(-25%);
+        }
+    </style>
+    <div class="content">
+        <h1>
+            <img class="logo" src="favicon.ico">
+            <span>
+                Hello world...
+            </span>
+        </h1>
+        <div>
+            We are BreadSoft,
+            an forward thinking game developlent and UX/UI engeneering studio.
+        </div>
+        <div>
+            Come say hi to us at <a href="mailto:info@breadsoft.org" target="_blank">info[at]breadsoft.org</a>,
+            or <a href="https://github.com/BreadSoft" target="_blank">GitHub</a>, or <a
+                href="https://www.linkedin.com/company/breadsoft">LinkedIn</a>.
+        </div>
     </div>
 </body>
+
 </html>
