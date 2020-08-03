@@ -20,8 +20,10 @@
             top: 50%;
             transform: translate(-50%, -50%);
             left: 50%;
+            width: calc(100% - 2rem);
         }
 
+        
         h1 span {
             margin-left: 80px;
         }
@@ -31,6 +33,19 @@
             height: 75px;
             transform: translateY(-25%);
         }
+
+        @media (max-width: 991px) {
+            h1 span {
+                display: block;
+                margin-left: 0 !important;
+                margin-top: 80px;
+            }
+
+            h1 .logo {
+                transform: translate(-50%, -100%);
+            }
+        }
+
     </style>
     <div class="content">
         <h1>
