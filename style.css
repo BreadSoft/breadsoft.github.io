@@ -1,0 +1,131 @@
+* {
+  font-family: 'Fira Code', monospace;
+  text-align: center;
+  scroll-behavior: smooth
+}
+
+.content {
+  /* content here */
+}
+
+h1 span {
+  margin-left: 80px;
+}
+
+h1 .logo {
+  position: absolute;
+  height: 75px;
+  transform: translateY(-25%);
+}
+
+.top-bar {
+  background-color: #302b2b;
+  width: calc(100vw - 4em);
+  min-height: 4em;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2em;
+  border-radius: .3em;
+  transition: height .3s ease-in-out;
+}
+
+.top-bar .controls {
+  height: 4em;
+}
+
+.top-bar .menu-list {
+  height: 0;
+  overflow: hidden;
+  color: white;
+  text-align: right;
+  transition: height .3s ease-in-out;
+}
+
+.top-bar.expand .menu-list {
+  height: 11em;
+}
+
+.top-bar .menu-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar .menu-list ul li {
+  padding: 1em;
+  cursor: pointer;
+
+}
+
+.top-bar .menu-list ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar .menu-list ul li:hover {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.top-bar .menu-list ul li:hover::before {
+  font-style: italic;
+  font-weight: bold;
+  content: "$_";
+}
+
+.top-bar .logo {
+  position: fixed;
+  height: 3em;
+  background: white;
+  width: 3em;
+  border-radius: .3em;
+  top: .5em;
+  left: .5em;
+}
+
+.top-bar .logo img {
+  height: 100%;
+}
+
+.top-bar .menu {
+  position: fixed;
+  right: 0;
+  color: white;
+  padding: 1em;
+  top: 0;
+  cursor: pointer;
+}
+
+.top-bar .menu .icon {
+  font-size: 2em;
+}
+
+.top-bar .menu .icon.close {
+  display: none;
+}
+
+.top-bar.expand .menu .icon.show {
+  display: none;
+}
+
+.top-bar.expand .menu .icon.close {
+  display: block;
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 10em;
+}
+
+@media (max-width: 991px) {
+  h1 span {
+    display: block;
+    margin-left: 0 !important;
+    margin-top: 80px;
+  }
+
+  h1 .logo {
+    transform: translate(-50%, -100%);
+  }
+}

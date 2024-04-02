@@ -1,69 +1,76 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BreadSoft</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="scripts.js"></script>
+  </head>
 
-<body>
-    <style>
-        * {
-            font-family: 'Fira Code', monospace;
-            text-align: center;
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            width: calc(100% - 2rem);
-        }
-
-        
-        h1 span {
-            margin-left: 80px;
-        }
-
-        h1 .logo {
-            position: absolute;
-            height: 75px;
-            transform: translateY(-25%);
-        }
-
-        @media (max-width: 991px) {
-            h1 span {
-                display: block;
-                margin-left: 0 !important;
-                margin-top: 80px;
-            }
-
-            h1 .logo {
-                transform: translate(-50%, -100%);
-            }
-        }
-
-    </style>
-    <div class="content">
-        <h1>
-            <img class="logo" src="favicon.ico">
-            <span>
-                Hello world...
-            </span>
-        </h1>
-        <div>
-            We are BreadSoft,
-            a forward thinking game developlent and UX/UI engeneering studio.
+  <body>
+    <div id="bsft-top-bar" class="top-bar">
+      <div class="controls">
+        <a href="/">
+          <div class="logo">
+            <img src="favicon.ico" />
+          </div>
+        </a>
+        <div class="menu" id="bsft-hamburger" onclick="fireTheGrill()">
+          <span class="material-symbols-outlined icon show"> menu </span>
+          <span class="material-symbols-outlined icon close"> close </span>
         </div>
-        <div>
-            Come say hi to us at <a href="mailto:info@breadsoft.org" target="_blank">info[at]breadsoft.org</a>,
-            or <a href="https://github.com/BreadSoft" target="_blank">GitHub</a>, or <a
-                href="https://www.linkedin.com/company/breadsoft" target="_blank">LinkedIn</a>.
-        </div>
+      </div>
+      <div class="menu-list">
+        <ul>
+          <a href="#works" class="bsft-jump-item">
+            <li>works</li>
+          </a>
+          <a href="#about_us" class="bsft-jump-item">
+            <li>about_us</li>
+          </a>
+          <a href="#contact" class="bsft-jump-item">
+            <li>contact</li>
+          </a>
+        </ul>
+      </div>
     </div>
-</body>
-
+    <div class="content">
+      <div id="works" class="hero">
+        <h1>
+          <img class="logo" src="favicon.ico" />
+          <span> Hello world... </span>
+        </h1>
+      </div>
+      <div id="about_us" class="hero">
+        <div>
+          We are BreadSoft, a forward thinking game developlent and UX/UI
+          engeneering studio.
+        </div>
+      </div>
+      <div id="contact" class="hero">
+        <div>
+          Come say hi to us at
+          <a href="mailto:info@breadsoft.org" target="_blank"
+            >info[at]breadsoft.org</a
+          >, or
+          <a href="https://github.com/BreadSoft" target="_blank">GitHub</a>, or
+          <a href="https://www.linkedin.com/company/breadsoft" target="_blank"
+            >LinkedIn</a
+          >.
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
